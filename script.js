@@ -14,7 +14,8 @@ async function converter() {
         
         const key = origem + destino;
         const rate = data[key].bid;
-        res.innerText = (valor * rate).toFixed(2) + ' ' + destino;
+        const valorConvertido = (valor * rate).toLocaleString('pt-BR', { style: 'currency', currency: destino });
+        res.innerText = valorConvertido;
     } catch(err) {
         res.innerText = 'Par não disponível.';
     }
