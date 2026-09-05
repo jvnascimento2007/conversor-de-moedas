@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Câmbio Certo</title>
+    <title>Câmbio Certo Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Conversor</h1>
+        <h1>Conversor Pro</h1>
         <input type="number" id="valor" placeholder="Valor">
-        <select id="moeda">
-            <option value="USD-BRL">Dólar (USD -> BRL)</option>
-            <option value="EUR-BRL">Euro (EUR -> BRL)</option>
-            <option value="JPY-BRL">Iene (JPY -> BRL)</option>
+        <select id="moedaOrigem">
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="JPY">Iene (JPY)</option>
+            <option value="BRL">Real (BRL)</option>
+        </select>
+        <select id="moedaDestino">
+            <option value="BRL">Real (BRL)</option>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="JPY">Iene (JPY)</option>
         </select>
         <button onclick="converter()">Converter</button>
-        <p id="resultado">R$ 0,00</p>
+        <p id="resultado">Resultado</p>
     </div>
     <script src="script.js"></script>
 </body>
