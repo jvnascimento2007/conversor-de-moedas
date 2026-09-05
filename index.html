@@ -8,8 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Conversor de Dólar</h1>
-        <input type="number" id="usd" placeholder="Valor em USD">
+        <h1>Conversor</h1>
+        <input type="number" id="valor" placeholder="Valor">
+        <select id="moeda">
+            <option value="USD-BRL">Dólar (USD -> BRL)</option>
+            <option value="EUR-BRL">Euro (EUR -> BRL)</option>
+            <option value="JPY-BRL">Iene (JPY -> BRL)</option>
+        </select>
         <button onclick="converter()">Converter</button>
         <p id="resultado">R$ 0,00</p>
     </div>
